@@ -1,0 +1,8 @@
+.vscode/
+__pycache__/
+*.pptx
+*.docx
+*.zip
+*.pdf
+*.txt
+*try.js
