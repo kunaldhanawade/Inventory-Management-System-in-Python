@@ -1,10 +1,7 @@
-import tkinter
 from tkinter import *
 from tkinter import messagebox
-import random
 from tkcalendar import *
 from tkinter import ttk
-from datetime import date, datetime
 import matplotlib.pyplot as plt
 
 # database connection
