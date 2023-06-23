@@ -128,7 +128,6 @@ class Login:
             messagebox.showerror(
                 "Error", "Entry Fields cannot be blank.", parent=self.master
             )
-            # self.give_access_to_owner()
         elif uname == "admin" and pwd == "1234":
             self.give_access_to_owner()
         else:
@@ -153,8 +152,6 @@ class Login:
             messagebox.showerror(
                 "Error", "Entry Fields cannot be blank.", parent=self.master
             )
-        elif uname == "admin" and pwd == "1234":
-            self.give_access_to_employee()
         else:
             collection = database["employee_details"]
             data = collection.find_one({"emp_id": uname, "emp_login_pwd": pwd})
@@ -182,8 +179,6 @@ class Login:
             messagebox.showerror(
                 "Error", "Entry Fields cannot be blank.", parent=self.master
             )
-        elif uname == "admin" and pwd == "1234":
-            self.find_customer_details()
         else:
             collection = database["employee_details"]
             data = collection.find_one({"emp_id": uname, "emp_login_pwd": pwd})
