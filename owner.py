@@ -188,10 +188,9 @@ class Owner_App:
         )
 
         # variables
-        global emp_id, emp_name, emp_age, emp_gender, emp_dob, emp_aadhar, emp_salary, emp_login_pwd
+        global emp_id, emp_name, emp_gender, emp_dob, emp_aadhar, emp_salary, emp_login_pwd
         emp_id = StringVar()
         emp_name = StringVar()
-        emp_age = StringVar()
         emp_gender = StringVar()
         emp_dob = StringVar()
         emp_aadhar = StringVar()
@@ -455,7 +454,6 @@ class Owner_App:
         if (
             emp_id.get() == ""
             and emp_name.get() == ""
-            # and emp_age.get() == ""
             and emp_gender.get() == ""
             and emp_dob.get() == ""
             and emp_aadhar.get() == ""
@@ -469,7 +467,6 @@ class Owner_App:
         elif (
             emp_id.get() == ""
             or emp_name.get() == ""
-            # or emp_age.get() == ""
             or emp_gender.get() == ""
             or emp_dob.get() == ""
             or emp_aadhar.get() == ""
@@ -489,7 +486,6 @@ class Owner_App:
             record = {
                 "emp_id": emp_id.get(),
                 "emp_name": emp_name.get(),
-                # "emp_age": emp_age.get(),
                 "emp_gender": emp_gender.get(),
                 "emp_DOB": emp_dob.get(),
                 "emp_aadhar": emp_aadhar.get(),
@@ -521,7 +517,6 @@ class Owner_App:
             else:
                 emp_id.set(data["emp_id"])
                 emp_name.set(data["emp_name"])
-                # emp_age.set(data["emp_age"])
                 emp_gender.set(data["emp_gender"])
                 emp_dob.set(data["emp_DOB"])
                 emp_aadhar.set(data["emp_aadhar"])
@@ -533,7 +528,6 @@ class Owner_App:
         if (
             emp_id == ""
             or emp_name == ""
-            # or emp_age == ""
             or emp_gender == ""
             or emp_dob == ""
             or emp_aadhar == ""
@@ -551,7 +545,6 @@ class Owner_App:
             newvalue = {
                 "$set": {
                     "emp_name": emp_name.get(),
-                    # "emp_age": emp_age.get(),
                     "emp_gender": emp_gender.get(),
                     "emp_DOB": emp_dob.get(),
                     "emp_aadhar": emp_aadhar.get(),
@@ -572,7 +565,6 @@ class Owner_App:
     def clear_employee_details(self):
         emp_id.set("")
         emp_name.set("")
-        # emp_age.set("")
         emp_gender.set("")
         emp_dob.set("")
         emp_aadhar.set("")
