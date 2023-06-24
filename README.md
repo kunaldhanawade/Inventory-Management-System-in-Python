@@ -29,10 +29,10 @@ With this system, the dairy shop can easily add and manage product details, hand
 ## Installation
 1. Clone the repository: `git clone https://github.com/your_username/your_repository.git`
 2. Install the required dependencies: `tkinter`, `tkcalendar`, `pymongo`, `Pillow`, `matplotlib`
-3. Create a Mongo DB database of the name `my_inventory` with collections  `employee_details`, `sales_details` and `stock_details`
+3. Create a Mongo DB database with name `my_inventory` having collections  `employee_details`, `sales_details` and `stock_details`
 4. Run the application: `python index.py`
 
-**Note** - For Admin Login, use __"admin"__ as the username and __"1234"__ as the password.
+> Note: For Admin Login, use __"admin"__ as the username and __"1234"__ as the password.
 
 ## Usage
 1. Launch the application.
